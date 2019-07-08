@@ -1,0 +1,49 @@
+{
+  "name": "launch-academy-faq-part-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "node_modules/.bin/webpack-dev-server --host 0.0.0.0",
+    "test": "node_modules/.bin/karma start karma.conf.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "~6.26.3",
+    "babel-loader": "~8.0.6",
+    "babel-preset-env": "~1.7.0",
+    "babel-preset-react": "~6.24.1",
+    "css-loader": "^3.0.0",
+    "enzyme": "~3.10.0",
+    "isparta-loader": "^2.0.0",
+    "jasmine-core": "~3.4.0",
+    "jasmine-enzyme": "~7.0.2",
+    "karma": "~4.1.0",
+    "karma-chrome-launcher": "~2.2.0",
+    "karma-coverage": "~1.1.2",
+    "karma-jasmine": "~2.0.1",
+    "karma-phantomjs-launcher": "~1.0.4",
+    "karma-sourcemap-loader": "~0.3.7",
+    "karma-spec-reporter": "0.0.32",
+    "karma-webpack": "~4.0.2",
+    "motion-ui": "^2.0.3",
+    "node-sass": "^4.12.0",
+    "phantomjs-prebuilt": "~2.1.16",
+    "react-addons-test-utils": "~15.6.2",
+    "react-test-renderer": "~16.8.6",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "~4.35.2",
+    "webpack-dev-server": "~3.7.2",
+    "write-file-webpack-plugin": "^4.5.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "firebaseui": "^4.0.0",
+    "react": "~16.8.6",
+    "react-dom": "~16.8.6",
+    "react-router-dom": "^5.0.1",
+    "react-spring": "^8.0.27"
+  }
+}

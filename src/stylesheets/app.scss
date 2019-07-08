@@ -1,0 +1,47 @@
+.top-bar{
+  background: #A60825;
+}
+
+.top-bar ul{
+  background: #A60825;
+}
+
+.top-bar a{
+  font-weight: bold;
+  color: white;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.top-bar-sublink :hover{
+  background-color: #c43852
+}
+
+.body-about{
+  font-size: 1em;
+}
+
+.logo{
+  max-width: 200px;
+  padding-right: 20px;
+}
+
+.header{
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+
+.button{
+  background-color: #c43852;
+}
+
+.button-about{
+  font-size: 1.25em;
+  padding: 10px;
+}
+
+.button:hover{
+  background: transparent;
+  color: #A60825;
+  border-color: #A60825;
+}
