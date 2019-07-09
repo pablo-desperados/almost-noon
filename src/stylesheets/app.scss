@@ -1,3 +1,12 @@
+
+body{
+  font-family: 'Nunito', sans-serif;
+}
+
+.mainpage-body{
+
+}
+
 .top-bar{
   background: #A60825;
 }
@@ -26,22 +35,40 @@
   padding-right: 20px;
 }
 
+.chicken-logo{
+  width: 200px;
+}
+
 .header{
   padding-bottom: 40px;
   padding-top: 20px;
+
+}
+
+.header-mainpage{
+  margin-left: auto;
+  padding-top: 20px;
+  color:#c43852;
+  font-weight: bold;
+  font-family: 'Nunito', sans-serif;
 }
 
 .button{
   background-color: #c43852;
-}
-
-.button-about{
-  font-size: 1.25em;
+  font-size: 1.45em;
   padding: 10px;
+  margin-top: 10px;
 }
 
 .button:hover{
   background: transparent;
   color: #A60825;
   border-color: #A60825;
+}
+.main-button-position{
+  margin-top: 50px;
+}
+
+.main-content{
+  padding-left: 15px;
 }

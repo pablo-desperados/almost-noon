@@ -11,5 +11,13 @@ get "/about" do
 end
 
 get "/" do
+  redirect "/mainpage"
+end
+
+get "/mainpage" do
+  erb :home
+end
+
+get "/mainpage/selection" do
   erb :home
 end

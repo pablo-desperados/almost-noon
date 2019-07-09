@@ -10,7 +10,7 @@ class App extends React.Component{
     return(
       <div>
         <BrowserRouter>
-          <Route path="/" component={Navbar} />
+          <Route path="/" render={(props)=><Navbar/>} />
         </BrowserRouter>
       </div>
     )
