@@ -27,7 +27,6 @@ class Navbar extends React.Component{
         <Route exact path = "/mainpage" component={MainPageContainer} />
         <Route exact path="/mainpage/selection" component={SelectionContainer} />
         <Route exact path="/about" component={AboutComponent} />
-
         </Switch>
     </div>
 

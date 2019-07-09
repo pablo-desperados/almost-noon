@@ -33,7 +33,7 @@ return(
           <p>To get fast and realiable recommendations of local restaurants, simply click our the random button in our main page!</p>
           <p>Quit being dissapointed by review websites with sponsored content, fake reviews, and dishonest practices.</p>
           <p>Start getting honest recommendations now! </p>
-          <Link to="/" className="button">Try it now!</Link>
+          <Link to="/mainpage" className="button">Try it now!</Link>
         </div>
       </div>
     </animated.div>
