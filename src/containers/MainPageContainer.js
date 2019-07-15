@@ -9,11 +9,7 @@ class MainPageContainer extends React.Component{
     this.state={
 
     }
-    this.possiblefetch = this.possiblefetch.bind(this)
-  }
-
-  possiblefetch(){
-    debugger
+    
   }
 
 
