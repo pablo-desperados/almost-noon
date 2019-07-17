@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 
-body{
+body h2 h1 h3 h4 h5 h6{
   font-family: 'Nunito', sans-serif;
 }
 
@@ -9,6 +10,7 @@ body{
 
 .top-bar{
   background: #A60825;
+  display: flex;
 }
 
 .top-bar ul{
@@ -71,4 +73,20 @@ body{
 
 .main-content{
   padding-left: 15px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.selection-img{
+  max-height: 250px;
+}
+
+.mobile{
+  left: 50%;
+  top: 50%;
+}
+
+.loading{
+  position: absolute;
+    left: 50%;
+    top: 50%;
 }

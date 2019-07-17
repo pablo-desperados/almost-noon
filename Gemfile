@@ -9,3 +9,5 @@ gem 'open_uri_redirections', '~> 0.2.1'
 group :development, :test do
   gem 'pry'
 end
+
+gem "http", "~> 4.1"

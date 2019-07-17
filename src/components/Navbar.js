@@ -5,6 +5,7 @@ import MainPageContainer from '../containers/MainPageContainer'
 import SelectionContainer from '../containers/SelectionContainer'
 import App from '../containers/App'
 
+
 class Navbar extends React.Component{
   constructor(props){
     super(props)
@@ -17,7 +18,7 @@ class Navbar extends React.Component{
         <div className="top-bar">
           <div className="top-bar-left">
             <ul className="dropdown menu" data-dropdown-menu>
-              <li><Link to="/mainpage"><img className="logo" src="images/logo.png" href="/"/></Link></li>
+              <li><Link to="/mainpage"><img className="logo" src="/images/logo.png" href="/"/></Link></li>
               <li className="top-bar-sublink"><Link to="/about">About</Link></li>
             </ul>
           </div>
