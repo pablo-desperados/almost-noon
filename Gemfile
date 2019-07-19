@@ -10,4 +10,6 @@ group :development, :test do
   gem 'pry'
 end
 
+
 gem "http", "~> 4.1"
+gem 'web-console', '~> 2.0'
