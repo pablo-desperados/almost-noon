@@ -6,7 +6,7 @@ require "optparse"
 require "sinatra/reloader" if development?
 require "pry" if development? || test?
 
-
+set :bind, '0.0.0.0'
 set :public_folder, File.join(File.dirname(__FILE__), "public")
 
 API_KEY = 'iZpPMULRZtBfW0YSZNaXAV-5pMSeh1cc7ZDe1f6xmyTLx_TzYhMb9GMWqAMtJ4xtm1qKgTh_hXzram5-KRJ4lHvm3jvo_9Egqm7thTHlqV69djfav716SxZMDJAkXXYx'
