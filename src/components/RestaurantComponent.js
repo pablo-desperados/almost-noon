@@ -17,7 +17,7 @@ const RestaurantComponent = props =>{
       </div>
 
       <div className="rows">
-          <div className="columns columns-block small-5 small-offset-1 large-4  ">
+          <div className="columns columns-block small-5 small-offset-1 large-5  ">
             <img className="selection-img" src={restaurant.image_url} alt="" />
         </div>
         <div className ="columns large-6">
