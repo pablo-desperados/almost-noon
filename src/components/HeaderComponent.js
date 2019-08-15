@@ -3,7 +3,7 @@ import React from 'react'
 const HeaderComponent = (props) =>{
 
   return(
-    <div>
+    <div className="main-header">
       <div className="row">
         <div className="columns large-8 large-uncentered">
           <h1 className="header-mainpage">Don't know where to eat?</h1>
