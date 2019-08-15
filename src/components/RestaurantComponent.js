@@ -6,7 +6,6 @@ const RestaurantComponent = props =>{
 
   }
 
-  debugger
   return(
 
     <div>

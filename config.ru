@@ -1,5 +1,5 @@
 require "./server"
-
+require 'dotenv/load'
 require './lib/app'
 
 
