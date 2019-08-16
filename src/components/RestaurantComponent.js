@@ -19,7 +19,7 @@ const RestaurantComponent = props =>{
           <div className="columns columns-block small-5 small-offset-1 large-5  ">
             <img className="selection-img" src={restaurant.image_url} alt="" />
         </div>
-        <div className ="columns large-6">
+        <div className ="columns large-6 info-block">
             <div className="columns large-8 large-offset-2 large-centered">
               <h2>{restaurant.name}</h2>
           </div>

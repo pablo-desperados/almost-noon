@@ -1,6 +1,7 @@
 require "sinatra"
 require 'json'
 require 'http'
+require 'dotenv/load'
 require 'open-uri'
 require "optparse"
 require "sinatra/reloader" if development?
