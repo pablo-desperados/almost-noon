@@ -2,7 +2,6 @@ require "sinatra"
 require 'json'
 require 'http'
 require 'open-uri'
-require 'dotenv/load'
 require "optparse"
 require "sinatra/reloader" if development?
 require "pry" if development? || test?
