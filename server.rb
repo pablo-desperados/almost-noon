@@ -24,9 +24,9 @@ require "pry" if development? || test?
 
   get "/api.yelp.com/v3" do
     ip_location = JSON.parse(open("https://ip-api.io/api/json?api_key=#{ENV['IP_API_KEY']}").read)
-    LONGITUDE = ip_location["longitude"]
-    LATITUDE = ip_location["latitude"]
-    url = "https://api.yelp.com/v3/businesses/search?term=takeout&radius=1600&sort_by=rating&latitude=#{LATITUDE}&longitude=#{LONGITUDE}"
+    longitude_coor = ip_location["longitude"]
+    latitude_coor = ip_location["latitude"]
+    url = "https://api.yelp.com/v3/businesses/search?term=takeout&radius=1600&sort_by=rating&latitude=#{latitude_coor}&longitude=#{longitude_coor}"
     response = HTTP.auth("Bearer #{ENV['YELP_API_KEY']}").get(url)
     return response.body.to_json
   end
