@@ -25,7 +25,7 @@ class SelectionContainer extends React.Component{
     .then(response => response.json())
     .then(response=> JSON.parse(response))
     .then(body=>{
-      let randomNum = Math.floor((Math.random() * 20)+1)
+      let randomNum = Math.floor((Math.random() * body.businesses.length )+1)
       this.setState({ chosenRestaurant: body.businesses[randomNum]})
     })
     .catch(error=> console.error(`Error in fetch ----> ${error.message}`))
