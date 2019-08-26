@@ -5,13 +5,7 @@ import MainPageContainer from '../containers/MainPageContainer'
 import SelectionContainer from '../containers/SelectionContainer'
 import App from '../containers/App'
 
-
-class Navbar extends React.Component{
-  constructor(props){
-    super(props)
-  }
-
-  render(){
+const Navbar = (props)=>{
   return(
     <div>
       <div>
@@ -32,7 +26,6 @@ class Navbar extends React.Component{
     </div>
 
   )
-  }
 }
 
 export default Navbar

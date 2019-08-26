@@ -11,7 +11,6 @@ const fade = useSpring({
     opacity: 1
 
 })
-console.log(fade)
 
 return(
     <animated.div style={fade}>

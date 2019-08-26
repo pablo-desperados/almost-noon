@@ -1,17 +1,12 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import ReactLoading from 'react-loading'
-
 import RestaurantComponent from '../components/RestaurantComponent'
 
-class SelectionContainer extends React.Component{
-  constructor(props){
-    super(props)
-    this.state={
-      chosenRestaurant : false
-    }
-  }
+const SelectionContainer =(props)=>{
 
-  componentDidMount(){
+  const [chosenRestaurant,  setChosenRestaurant] = useState(false)
+
+  let fetchData=()=>{
     fetch("/api.yelp.com/v3")
     .then(response=>{
     if(response.ok){
@@ -26,30 +21,31 @@ class SelectionContainer extends React.Component{
     .then(response=> JSON.parse(response))
     .then(body=>{
       let randomNum = Math.floor((Math.random() * body.businesses.length )+1)
-      this.setState({ chosenRestaurant: body.businesses[randomNum]})
+      setChosenRestaurant(body.businesses[randomNum])
     })
     .catch(error=> console.error(`Error in fetch ----> ${error.message}`))
-
   }
 
-  render(){
-    if (this.state.chosenRestaurant) {
-      return(
-        <div className=" header header-mainpage">
-        <RestaurantComponent
-        chosenRestaurant = {this.state.chosenRestaurant}
-        />
+  useEffect(()=>{
+    fetchData()
+  }, [])
+
+  if (chosenRestaurant) {
+    return(
+      <div className=" header header-mainpage">
+      <RestaurantComponent
+      chosenRestaurant = {chosenRestaurant}
+      />
+      </div>
+    )
+  }else{
+    return(
+      <div className="row loading">
+        <div className="columns large-centered">
+          <ReactLoading type={"spokes"} color={'#A60825'}/>
         </div>
-      )
-    }else{
-      return(
-        <div className="row loading">
-          <div className="columns large-centered">
-            <ReactLoading type={"spokes"} color={'#A60825'}/>
-          </div>
-        </div>
-      )
-    }
+      </div>
+    )
   }
 
 }
