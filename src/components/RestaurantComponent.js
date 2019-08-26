@@ -2,12 +2,8 @@ import React from 'react'
 
 const RestaurantComponent = props =>{
   let restaurant = props.chosenRestaurant
-  if (restaurant.categories[0].title) {
-
-  }
 
   return(
-
     <div>
       <div className="row header">
         <div className="columns">
