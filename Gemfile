@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 ruby '2.4.5'
-gem "sinatra", "~> 2.0"
+gem "sinatra", "~> 2.2"
 gem "sinatra-contrib"
 gem "json"
 gem 'dotenv', '~> 2.7', '>= 2.7.5'
